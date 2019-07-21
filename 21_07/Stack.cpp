@@ -24,7 +24,7 @@ bool Stack::push(int x)
     else
     {
         {
-            a[top++]=x;
+            a[++top]=x;
             cout<<x<<" pushed int stack\n";
             return true;
         }
@@ -58,4 +58,15 @@ int Stack::peek()
 bool Stack::isEmpty()
 {
     return (top<0);
+}
+int main()
+{
+    class Stack s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    cout<<s.pop()<<" popped from the stack"<<endl;
+    cout<<s.isEmpty();
+    return 0;
+
 }
