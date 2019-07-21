@@ -15,7 +15,7 @@ public:
     bool isEmpty();
 };
 bool Stack::push(int x)
-[
+{
     if(top>=(MAX-1))
     {
         cout<<"Stack Overflow";
@@ -30,7 +30,7 @@ bool Stack::push(int x)
         }
     }
     
-]
+}
 int Stack::pop()
 {
     if(top<0)
