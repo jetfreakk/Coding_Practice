@@ -11,7 +11,7 @@ void dfsHelper(T Node, map<T,bool>)
     ordering.push_front(node);
 
 }
-void dfstopologicalsort(T src)
+void dfstopologicalsort()
 {
     map<T,bool> visited;
     list<T> ordering;
@@ -22,5 +22,9 @@ void dfstopologicalsort(T src)
         {
             dfshelper(node,visited,ordering);
         }
+    }
+    for(T element :ordering)
+    {
+        cout<<element<<"-->";
     }
 }

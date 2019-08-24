@@ -7,7 +7,7 @@ class Heap{
     bool minHeap;
     bool compare(int a,int b)
     {
-        if(minheap)
+        if(minHeap)
         return a<b;
         else
         return a>b;
@@ -15,7 +15,7 @@ class Heap{
     public:
         Heap(bool type=true)
         {
-            minHeap=false;
+            minHeap=type;
             v.push_back(-1);
         }
         void push(int data)
@@ -36,7 +36,7 @@ class Heap{
         }
         int top()
         {
-            returnv[1];
+            return v[1];
         }
 };
 int main()
